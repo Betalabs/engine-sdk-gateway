@@ -1,0 +1,22 @@
+{
+  "name": "betalabs/engine-sdk-gateway",
+  "description": "Gateway SDK for internal apps Engine",
+  "keywords": ["api", "laravel", "betalabs", "sdk"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Betalabs Tecnologia LTDA.",
+      "email": "betalabs@betalabs.com.br"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "laravel/framework": "5.7.*",
+    "betalabs/engine-contracts": "0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Betalabs\\Engine\\Integrators\\": "src/"
+    }
+  }
+}
