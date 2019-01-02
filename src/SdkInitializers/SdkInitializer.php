@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators\SdkInitializers;
+namespace Betalabs\EngineSdkGateway\SdkInitializers;
 
 interface SdkInitializer
 {

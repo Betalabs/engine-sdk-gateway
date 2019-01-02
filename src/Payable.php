@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 use Betalabs\Engine\Contracts\Client;
 use Betalabs\Engine\Contracts\Address;
@@ -36,7 +36,7 @@ interface Payable
     /**
      * Getter of Card
      *
-     * @return \Betalabs\Engine\Integrators\Card|\Betalabs\Engine\Integrators\TokenizedCard|\Betalabs\Engine\Contracts\CreditCard
+     * @return \Betalabs\EngineSdkGateway\Card|\Betalabs\EngineSdkGateway\TokenizedCard|\Betalabs\Engine\Contracts\CreditCard
      */
     public function getCard(): ?Card;
 
@@ -113,7 +113,7 @@ interface Payable
     /**
      * Get child Payable instances (i.e: child Orders from a Subscription).
      *
-     * @return null|\Illuminate\Support\Collection|\Betalabs\Engine\Integrators\Payable[]
+     * @return null|\Illuminate\Support\Collection|\Betalabs\EngineSdkGateway\Payable[]
      */
     public function getChildPayables(): ?Collection;
 

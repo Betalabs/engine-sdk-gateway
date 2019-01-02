@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Betalabs\\Engine\\Integrators\\": "src/"
+      "Betalabs\\EngineSdkGateway\\": "src/"
     }
   }
 }

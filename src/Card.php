@@ -1,20 +1,20 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 interface Card
 {
     /**
      * Card holder's getter.
      *
-     * @return \Betalabs\Engine\Integrators\CardHolder|null
+     * @return \Betalabs\EngineSdkGateway\CardHolder|null
      */
     public function getHolder(): ?CardHolder;
 
     /**
      * Card holder's setter.
      *
-     * @param \Betalabs\Engine\Integrators\CardHolder $cardHolder
+     * @param \Betalabs\EngineSdkGateway\CardHolder $cardHolder
      *
      * @return $this
      */

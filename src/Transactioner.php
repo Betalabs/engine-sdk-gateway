@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 use Betalabs\Engine\Contracts\Transaction;
 
@@ -9,11 +9,11 @@ interface Transactioner
     /**
      * Gateway transact for Payable instance
      *
-     * @param \Betalabs\Engine\Integrators\Payable $payable
+     * @param \Betalabs\EngineSdkGateway\Payable $payable
      *
      * @return \Betalabs\Engine\Contracts\Transaction
-     * @throws \Betalabs\Engine\Integrators\RefusedTransactionException
-     * @throws \Betalabs\Engine\Integrators\GatewayCommunicatorDoesNotExistsException
+     * @throws \Betalabs\EngineSdkGateway\RefusedTransactionException
+     * @throws \Betalabs\EngineSdkGateway\GatewayCommunicatorDoesNotExistsException
      */
     public function transact(Payable $payable): Transaction;
 }

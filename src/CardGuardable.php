@@ -1,15 +1,15 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 interface CardGuardable
 {
     /**
      * Save Card action
      *
-     * @param \Betalabs\Engine\Integrators\Card $card
+     * @param \Betalabs\EngineSdkGateway\Card $card
      *
-     * @return \Betalabs\Engine\Integrators\TokenizedCard
+     * @return \Betalabs\EngineSdkGateway\TokenizedCard
      */
     public function guard(Card $card): TokenizedCard;
 }

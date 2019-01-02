@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 
 class GatewayCommunicatorDoesNotExistsException extends \Exception

@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 use Betalabs\Engine\Contracts\TransactionHistory;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\Engine\Integrators;
+namespace Betalabs\EngineSdkGateway;
 
 
 use Betalabs\Engine\Contracts\Transaction;
@@ -10,7 +10,7 @@ interface Refunder
     /**
      * Gateway refund for Payable instance
      *
-     * @param \Betalabs\Engine\Integrators\Payable $payable
+     * @param \Betalabs\EngineSdkGateway\Payable $payable
      *
      * @return \Betalabs\Engine\Contracts\Transaction
      */

@@ -1,9 +1,9 @@
 <?php
 
-namespace Betalabs\Engine\Integrators\Gateways;
+namespace Betalabs\EngineSdkGateway\Gateways;
 
 
-use Betalabs\Engine\Integrators\Payable;
+use Betalabs\EngineSdkGateway\Payable;
 
 class AbstractIntegrator
 {
@@ -12,7 +12,7 @@ class AbstractIntegrator
      * Check if card must be tokenized by user choice or by Payable instance
      * requirement.
      *
-     * @param \Betalabs\Engine\Integrators\Payable $payable
+     * @param \Betalabs\EngineSdkGateway\Payable $payable
      *
      * @return bool
      */
