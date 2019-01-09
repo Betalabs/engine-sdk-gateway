@@ -124,4 +124,11 @@ interface Payable
      * @return bool
      */
     public function mustCancelReprovedTransaction(): bool;
+
+    /**
+     * Define if payment details must be informed explicitly in transaction.
+     *
+     * @return bool
+     */
+    public function mustInformExplicitlyPaymentDetails(): bool;
 }
