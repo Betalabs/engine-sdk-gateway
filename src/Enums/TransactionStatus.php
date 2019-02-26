@@ -1,6 +1,6 @@
 <?php
 
-namespace Betalabs\EngineSdkGateway;
+namespace Betalabs\EngineSdkGateway\Enums;
 
 use Garoevans\PhpEnum\Enum;
 
