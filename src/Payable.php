@@ -5,7 +5,6 @@ namespace Betalabs\EngineSdkGateway;
 use Betalabs\Engine\Contracts\Client;
 use Betalabs\Engine\Contracts\Address;
 use Betalabs\Engine\Contracts\PaymentMethod;
-use Betalabs\Engine\Contracts\Transaction;
 use Betalabs\Engine\Contracts\Installment;
 use Betalabs\Engine\Contracts\PaymentGateway;
 use Illuminate\Support\Collection;
@@ -71,7 +70,7 @@ interface Payable
     /**
      * Getter of Transaction
      *
-     * @return \Betalabs\Engine\Contracts\Transaction
+     * @return \Betalabs\EngineSdkGateway\Transaction
      */
     public function getTransaction(): Transaction;
 
