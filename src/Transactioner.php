@@ -2,8 +2,6 @@
 
 namespace Betalabs\EngineSdkGateway;
 
-use Betalabs\Engine\Contracts\Transaction;
-
 interface Transactioner
 {
     /**
@@ -11,7 +9,7 @@ interface Transactioner
      *
      * @param \Betalabs\EngineSdkGateway\Payable $payable
      *
-     * @return \Betalabs\Engine\Contracts\Transaction
+     * @return \Betalabs\EngineSdkGateway\Transaction
      * @throws \Betalabs\EngineSdkGateway\RefusedTransactionException
      * @throws \Betalabs\EngineSdkGateway\GatewayCommunicatorDoesNotExistsException
      */

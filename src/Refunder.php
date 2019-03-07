@@ -2,9 +2,6 @@
 
 namespace Betalabs\EngineSdkGateway;
 
-
-use Betalabs\Engine\Contracts\Transaction;
-
 interface Refunder
 {
     /**
@@ -12,7 +9,7 @@ interface Refunder
      *
      * @param \Betalabs\EngineSdkGateway\Payable $payable
      *
-     * @return \Betalabs\Engine\Contracts\Transaction
+     * @return \Betalabs\EngineSdkGateway\Transaction
      */
     public function refund(Payable $payable): Transaction;
 }

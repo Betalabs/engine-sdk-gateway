@@ -2,7 +2,6 @@
 
 namespace Betalabs\EngineSdkGateway;
 
-
 interface PayableItem
 {
     /**

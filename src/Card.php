@@ -103,11 +103,4 @@ interface Card
      * @param bool $mustBeTokenized
      */
     public function setMustBeTokenized(bool $mustBeTokenized);
-
-    /**
-     * Get number of installments.
-     *
-     * @return int
-     */
-    public function getInstallments(): int;
 }

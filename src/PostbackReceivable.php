@@ -2,8 +2,6 @@
 
 namespace Betalabs\EngineSdkGateway;
 
-use Betalabs\Engine\Contracts\TransactionHistory;
-
 interface PostbackReceivable
 {
     /**
@@ -11,7 +9,7 @@ interface PostbackReceivable
      *
      * @param string $token
      * @param array $content
-     * @return \Betalabs\Engine\Contracts\TransactionHistory
+     * @return \Betalabs\EngineSdkGateway\TransactionHistory
      */
     public function receive(string $token, array $content): TransactionHistory;
 }

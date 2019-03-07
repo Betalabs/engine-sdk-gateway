@@ -2,12 +2,14 @@
 
 namespace Betalabs\EngineSdkGateway;
 
+use Betalabs\EngineSdkGateway\Enums\TransactionStatus;
+
 interface TransactionHistory
 {
     /**
      * Set transaction status
      *
-     * @param \Betalabs\EngineSdkGateway\TransactionStatus $status
+     * @param \Betalabs\EngineSdkGateway\Enums\TransactionStatus $status
      * @return mixed
      */
     public function setStatus(TransactionStatus $status);

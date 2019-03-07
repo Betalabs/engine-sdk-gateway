@@ -11,11 +11,4 @@ interface TokenizedCard extends Card
      * @return mixed
      */
     public function getToken();
-
-    /**
-     * Get number of installments.
-     *
-     * @return int
-     */
-    public function getInstallments(): int;
 }

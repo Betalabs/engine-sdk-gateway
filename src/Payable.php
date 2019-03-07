@@ -10,13 +10,6 @@ use Betalabs\Engine\Contracts\Installment;
 use Betalabs\Engine\Contracts\PaymentGateway;
 use Illuminate\Support\Collection;
 
-/**
- * Interface Payable
- *
- * @property-read \Betalabs\Engine\Contracts\Transaction $transaction
- *
- * @package App\Integrators
- */
 interface Payable
 {
     /**
