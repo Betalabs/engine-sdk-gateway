@@ -103,4 +103,18 @@ interface Card
      * @param bool $mustBeTokenized
      */
     public function setMustBeTokenized(bool $mustBeTokenized);
+
+    /**
+     * Setter of payload
+     *
+     * @param array $payload
+     */
+    public function setPayload(array $payload);
+
+    /**
+     * Getter of payload
+     *
+     * @return array
+     */
+    public function getPayload(): array;
 }
