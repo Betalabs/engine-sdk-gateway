@@ -7,7 +7,7 @@ use Betalabs\EngineSdkGateway\Enums\TransactionStatus;
 interface TransactionHistory
 {
     /**
-     * Set transaction status
+     * Set transaction status.
      *
      * @param \Betalabs\EngineSdkGateway\Enums\TransactionStatus $status
      * @return mixed
@@ -15,10 +15,17 @@ interface TransactionHistory
     public function setStatus(TransactionStatus $status);
 
     /**
-     * Set gateway respoonse
+     * Set gateway respoonse, generally in JSON.
      *
      * @param string $text
      * @return mixed
      */
     public function setGatewayResponse(string $text);
+
+    /**
+     * Get gateway response, generally in JSON.
+     *
+     * @return string
+     */
+    public function getGatewayResponse();
 }
