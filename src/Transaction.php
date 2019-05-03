@@ -33,6 +33,13 @@ interface Transaction
     public function attachHistory(TransactionHistory $history);
 
     /**
+     * Returns the last transaction history.
+     *
+     * @return \Betalabs\EngineSdkGateway\TransactionHistory
+     */
+    public function getLastHistory();
+
+    /**
      * Persist to database
      *
      */
