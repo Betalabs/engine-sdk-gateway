@@ -45,12 +45,4 @@ interface Transaction
      * @return void
      */
     public function save();
-
-    /**
-     * Find transaction by token.
-     *
-     * @param string $token
-     * @return \Betalabs\EngineSdkGateway\Transaction
-     */
-    public static function findByToken(string $token);
 }

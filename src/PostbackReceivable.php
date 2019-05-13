@@ -7,11 +7,11 @@ interface PostbackReceivable
     /**
      * Gateway receive postback content
      *
-     * @param string $token
      * @param array $content
+     * @param string $token
      * @return \Betalabs\EngineSdkGateway\TransactionHistory|null
      */
-    public function receive(string $token, array $content): ?TransactionHistory;
+    public function receive(array $content, string $token = ''): ?TransactionHistory;
 
     /**
      * If the gateway needs to return a specific status code, return the code here. Otherwise, return null.
