@@ -9,9 +9,9 @@ interface TransactionHistory
     /**
      * Set transaction status.
      *
-     * @param \Betalabs\EngineSdkGateway\Enums\TransactionStatus $status
+     * @param \Betalabs\EngineSdkGateway\Enums\TransactionStatus|null $status
      */
-    public function setStatus(TransactionStatus $status);
+    public function setStatus(?TransactionStatus $status);
 
     /**
      * Set gateway respoonse, generally in JSON.

@@ -12,6 +12,13 @@ interface Transaction
     public function setToken(string $token);
 
     /**
+     * Get token
+     *
+     * @return string
+     */
+    public function getToken();
+
+    /**
      * Set bank slip url
      *
      * @param string $bankSlipUrl
