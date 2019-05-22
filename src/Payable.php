@@ -123,4 +123,18 @@ interface Payable
      * @return bool
      */
     public function mustInformExplicitlyPaymentDetails(): bool;
+
+    /**
+     * Setter of payload
+     *
+     * @param array $payload
+     */
+    public function setPayload(array $payload);
+
+    /**
+     * Getter of payload
+     *
+     * @return array
+     */
+    public function getPayload(): array;
 }
