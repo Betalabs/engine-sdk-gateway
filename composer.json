@@ -11,7 +11,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "laravel/framework": "5.7.*",
+    "laravel/framework": "5.7.*|5.8.*",
     "garoevans/php-enum": "^1.2",
     "betalabs/engine-contracts": "^1.0"
   },
