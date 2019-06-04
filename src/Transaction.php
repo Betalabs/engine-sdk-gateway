@@ -33,6 +33,13 @@ interface Transaction
     public function setPayable(Payable $payable);
 
     /**
+     * Get payable for this transaction
+     *
+     * @return \Betalabs\EngineSdkGateway\Payable
+     */
+    public function getPayable();
+
+    /**
      * Attach TransactionHistory to this transaction
      *
      * @param \Betalabs\EngineSdkGateway\TransactionHistory $history
