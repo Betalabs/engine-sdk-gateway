@@ -27,7 +27,6 @@ interface TransactionHistory
      */
     public function setStatusReason(string $text);
 
-
     /**
      * Get gateway response, generally in JSON.
      *
