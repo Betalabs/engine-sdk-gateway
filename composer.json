@@ -11,9 +11,9 @@
   ],
   "require": {
     "php": ">=7.2",
-    "laravel/framework": "5.7.*|5.8.*|^6.0",
+    "laravel/framework": "^6.0",
     "garoevans/php-enum": "^1.2",
-    "betalabs/engine-contracts": "^1.1"
+    "betalabs/engine-contracts": "^1.1.1"
   },
   "autoload": {
     "psr-4": {
