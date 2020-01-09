@@ -2,13 +2,16 @@
 
 namespace Betalabs\EngineSdkGateway;
 
+use Betalabs\Engine\Contracts\PaymentGateway;
 
 interface TokenizedCard extends Card
 {
     /**
      * Get token from tokenized card instance.
      *
-     * @return mixed
+     * @param \Betalabs\Engine\Contracts\PaymentGateway $paymentGateway
+     *
+     * @return string
      */
-    public function getToken();
+    public function getToken(PaymentGateway $paymentGateway): string;
 }
