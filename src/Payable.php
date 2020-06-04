@@ -137,21 +137,4 @@ interface Payable
      * @return array
      */
     public function getPayload(): array;
-    
-    /**
-     * Related payables collection setter.
-     *
-     * @param \Betalabs\EngineSdkGateway\Payable[]|\Illuminate\Support\Collection $relatedPayables
-     *
-     * @return Payable
-     */
-    public function setRelatedPayables(Collection $relatedPayables);
-    
-    
-    /**
-     * Related payables collection getter.
-     *
-     * @return \Illuminate\Support\Collection
-     */
-    public function getRelatedPayables(): Collection;
 }
