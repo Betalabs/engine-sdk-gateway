@@ -3,6 +3,7 @@
 namespace Betalabs\EngineSdkGateway\Gateways;
 
 
+use Betalabs\EngineSdkGateway\Card;
 use Betalabs\EngineSdkGateway\Payable;
 
 class AbstractIntegrator
@@ -19,6 +20,9 @@ class AbstractIntegrator
     protected function mustTokenizeCard(Payable $payable)
     {
         return $payable->getPaymentMethod()->isCard()
-            && ($payable->getCard()->mustBeTokenized() || $payable->requiresTokenization());
+            && (
+                ($payable->getCard() instanceof Card && $payable->getCard()->mustBeTokenized())
+                || $payable->requiresTokenization()
+            );
     }
 }
