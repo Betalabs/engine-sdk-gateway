@@ -20,9 +20,7 @@ class AbstractIntegrator
     protected function mustTokenizeCard(Payable $payable)
     {
         return $payable->getPaymentMethod()->isCard()
-            && (
-                ($payable->getCard() instanceof Card && $payable->getCard()->mustBeTokenized())
-                || $payable->requiresTokenization()
-            );
+            && $payable->getCard() instanceof Card
+            && ($payable->getCard()->mustBeTokenized() || $payable->requiresTokenization());
     }
 }
