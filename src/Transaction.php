@@ -65,7 +65,7 @@ interface Transaction
      *
      * @return $this
      */
-    public function setAuthorizationCode(string $authorizationCode);
+    public function setAuthorizationCode(?string $authorizationCode);
 
         /**
      * Persist to database
