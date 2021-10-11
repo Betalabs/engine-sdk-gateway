@@ -26,6 +26,13 @@ interface Transaction
     public function setBankSlipUrl(string $bankSlipUrl);
 
     /**
+     * Set payment code
+     *
+     * @param string $bankSlipUrl
+     */
+    public function setPaymentCode(string $paymentCode);
+
+    /**
      * Set payable for this transaction
      *
      * @param \Betalabs\EngineSdkGateway\Payable $payable
@@ -54,6 +61,13 @@ interface Transaction
     public function getLastHistory();
 
     /**
+     * Set authorization code to this transaction.
+     *
+     * @return $this
+     */
+    public function setAuthorizationCode(string $authorizationCode);
+
+        /**
      * Persist to database
      *
      * @return void
