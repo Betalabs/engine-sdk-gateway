@@ -2,6 +2,8 @@
 
 namespace Betalabs\EngineSdkGateway;
 
+use Betalabs\Engine\Contracts\PaymentGateway;
+
 interface Card
 {
     /**
@@ -117,4 +119,21 @@ interface Card
      * @return array
      */
     public function getPayload(): array;
+
+    /**
+     * Setter of token
+     *
+     * @param string                                    $token
+     * @param \Betalabs\Engine\Contracts\PaymentGateway $paymentGateway
+     */
+    public function setToken(string $token, PaymentGateway $paymentGateway): void;
+
+    /**
+     * Check if Card instance already has some token associated
+     *
+     * @param \Betalabs\Engine\Contracts\PaymentGateway $paymentGateway
+     *
+     * @return bool
+     */
+    public function alreadyTokenized(PaymentGateway $paymentGateway): bool;
 }
