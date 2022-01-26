@@ -96,6 +96,20 @@ interface Payable
     public function getDiscountAmount(): float;
 
     /**
+     * Must return discount amount from payable instance.
+     *
+     * @return float
+     */
+    public function getInsuranceAmount(): float;
+
+    /**
+     * Must return discount amount from payable instance.
+     *
+     * @return float
+     */
+    public function getOtherCostsAmount(): float;
+
+    /**
      * Check if Payable requires card's tokenization by default.
      *
      * @return bool
