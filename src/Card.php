@@ -11,7 +11,7 @@ interface Card
      *
      * @return \Betalabs\EngineSdkGateway\CardHolder|null
      */
-    public function getId(): ?int
+    public function getId(): ?int;
 
     /**
      * Card holder's getter.
@@ -145,16 +145,9 @@ interface Card
     public function alreadyTokenized(PaymentGateway $paymentGateway): bool;
 
     /**
-     * Load PaymentCard instance from id property.
+     * Load PaymentCard model instance from id property.
      *
-     * @return null|\App\Models\PaymentCard|\App\Models\Model
+     * @return null|\Illuminate\Database\Eloquent\Model
      */
-    public function getPaymentCard()
-    {
-        if (null === $this->id) {
-            return null;
-        }
-
-        return PaymentCard::query()->findOrFail($this->getId());
-    }
+    public function getPaymentCard();
 }
