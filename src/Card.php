@@ -7,6 +7,13 @@ use Betalabs\Engine\Contracts\PaymentGateway;
 interface Card
 {
     /**
+     * Card internal id's getter.
+     *
+     * @return \Betalabs\EngineSdkGateway\CardHolder|null
+     */
+    public function getId(): ?int
+
+    /**
      * Card holder's getter.
      *
      * @return \Betalabs\EngineSdkGateway\CardHolder|null
@@ -136,4 +143,18 @@ interface Card
      * @return bool
      */
     public function alreadyTokenized(PaymentGateway $paymentGateway): bool;
+
+    /**
+     * Load PaymentCard instance from id property.
+     *
+     * @return null|\App\Models\PaymentCard|\App\Models\Model
+     */
+    public function getPaymentCard()
+    {
+        if (null === $this->id) {
+            return null;
+        }
+
+        return PaymentCard::query()->findOrFail($this->getId());
+    }
 }
