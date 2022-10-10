@@ -13,7 +13,7 @@
     "php": ">=7.2",
     "laravel/framework": "5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0",
     "garoevans/php-enum": "^1.2",
-    "betalabs/engine-contracts": "^1.1|^2.0"
+    "betalabs/engine-contracts": "^2.3"
   },
   "autoload": {
     "psr-4": {
