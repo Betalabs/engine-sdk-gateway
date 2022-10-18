@@ -33,6 +33,13 @@ interface Payable
     public function getCard(): ?Card;
 
     /**
+     * Getter of Cards
+     *
+     * @return \Betalabs\EngineSdkGateway\Card[]|\Betalabs\EngineSdkGateway\TokenizedCard[]|\Betalabs\Engine\Contracts\CreditCard[]
+     */
+    public function getCards(): array;
+
+    /**
      * Getter of Installment
      *
      * @return \Betalabs\Engine\Contracts\Installment
