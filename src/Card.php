@@ -150,4 +150,9 @@ interface Card
      * @return null|\Illuminate\Database\Eloquent\Model
      */
     public function getPaymentCard();
+
+    /**
+     * @return float
+     */
+    public function getAmount();
 }
