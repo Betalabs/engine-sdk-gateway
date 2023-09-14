@@ -7,6 +7,7 @@ use Betalabs\Engine\Contracts\Address;
 use Betalabs\Engine\Contracts\PaymentMethod;
 use Betalabs\Engine\Contracts\Installment;
 use Betalabs\Engine\Contracts\PaymentGateway;
+use Betalabs\Engine\Contracts\CreditCard;
 use Illuminate\Support\Collection;
 
 interface Payable
@@ -45,6 +46,13 @@ interface Payable
      * @return \Betalabs\Engine\Contracts\Installment
      */
     public function getInstallment(): Installment;
+
+     /**
+     * Getter of Installments
+     *
+     * @return \Betalabs\Engine\Contracts\CreditCard
+     */
+    public function getInstallments(): CreditCard;
 
     /**
      * Getter of Client
