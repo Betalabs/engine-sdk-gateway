@@ -67,7 +67,14 @@ interface Transaction
      */
     public function setAuthorizationCode(?string $authorizationCode);
 
-        /**
+    /**
+     * Set nsu to this transaction.
+     *
+     * @return $this
+     */
+    public function setNsu(?string $nsu);
+
+    /**
      * Persist to database
      *
      * @return void
