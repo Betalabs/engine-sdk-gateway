@@ -48,7 +48,7 @@ interface Card
      *
      * @return mixed
      */
-    public function getNumber(): string;
+    public function getNumber(): ?string;
 
     /**
      * Setter of number
