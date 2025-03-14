@@ -17,14 +17,7 @@ interface Transaction
      * @return string
      */
     public function getToken();
-
-    /**
-     * Set merchant id
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId(string $merchantId);
-
+    
     /**
      * Set bank slip url
      *
