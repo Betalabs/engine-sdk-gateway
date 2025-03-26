@@ -17,7 +17,7 @@ interface Transaction
      * @return string
      */
     public function getToken();
-    
+
     /**
      * Set bank slip url
      *

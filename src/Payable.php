@@ -183,4 +183,14 @@ interface Payable
      * @return \Illuminate\Support\Collection
      */
     public function getRelatedPayables(): Collection;
+
+    /**
+     * @param array $threeDS
+     */
+    public function setThreeDS(array $threeDS);
+
+    /**
+     * @return array
+     */
+    public function getThreeDS(): array;
 }
