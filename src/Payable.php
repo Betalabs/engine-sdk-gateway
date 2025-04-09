@@ -193,4 +193,14 @@ interface Payable
      * @return array
      */
     public function getThreeDS(): array;
+
+    /**
+    * @param string
+    */
+    public function setFingerprint(string $fingerprint);
+
+    /**
+    * @return string
+    */
+    public function getFingerprint(): string;
 }
