@@ -195,16 +195,6 @@ interface Payable
     public function getThreeDS(): array;
 
     /**
-     * @param array $fraudAnalysis
-     */
-    public function setFraudAnalysis(array $fraudAnalysis);
-
-    /**
-     * @return array
-     */
-    public function getFraudAnalysis(): array;
-
-    /**
     * @param string
     */
     public function setFingerprint(string $fingerprint);
@@ -213,4 +203,15 @@ interface Payable
     * @return string
     */
     public function getFingerprint(): string;
+
+    /**
+    * @param array
+    */
+    public function setBrowser(array $browser);
+
+    /**
+    * @return array
+    */
+    public function getBrowser(): array;
+
 }
